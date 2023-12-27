@@ -6,17 +6,17 @@ body
 {
     background-color: hsl(47, 88%, 63%);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
 
 }
 #long
 {
-    font-size: 16px;
+    font-size: 17px;
     color: hsl(0, 0%, 50%);
 }
 header
 {
+    margin-top: 7%;
     box-shadow: 7px 7px 0px black;
     background-color: hsl(0, 0%, 100%);
     height: 500px;
@@ -33,15 +33,16 @@ section
     height: 92%;
     width: 88.6%;
 }
-.d1
+.d1 img
 {
     /* border: 2px solid green; */
+    border-radius: 10px;
 }
 .d3
 {
     /* border: 2px solid blue; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 .profile
@@ -53,9 +54,24 @@ section
 }
 .btn
 {
+    font-weight: 800;
     background-color: hsl(47, 88%, 63%);
     height: 30px;
     width: 100px;
     border-radius: 5px;
     border: 0px solid transparent;
+}
+.btn:hover
+{
+    cursor: pointer;
+    background-color: hsl(47, 88%, 53%);
+}
+#date
+{
+    font-weight: 550;
+}
+h3:hover
+{
+    cursor:pointer;
+    color: hsl(47, 88%, 63%);
 }
