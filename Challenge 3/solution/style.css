@@ -10,10 +10,29 @@
     justify-content: space-evenly;    
     align-items: center;
     height: 749px;
+    
 }
-div
+.d1
 {
-    height: 500px;
-    width: 500px;
-    border: 2px solid black;
+    height: 60vh;
+    width: 600px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-evenly;    
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 5px 5px 20px hsl(241, 100%, 89%);
+}
+
+.n1
+{
+    height: 100%;
+    width: 50%;
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    border-radius: 25px;
+}
+.n2
+{
+    width: 50%;
+    background-color: hsl(0, 0%, 100%);
 }
