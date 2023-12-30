@@ -17,7 +17,7 @@
 {
     height: 70vh;
     width: 50%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     justify-content: space-evenly;    
     align-items: center;
@@ -79,10 +79,11 @@ h2{
     /* border: 2px solid darkorange; */
     width: 55%;
     height: 80%;
+
     border-radius: 50%;
     background: rgb(78,33,202);
     background: linear-gradient(360deg, rgba(78,33,202,1) 17%,rgba(36,33,202,1) 96%);
-    box-shadow: inset 1px 1px 12px 0px hsla(256, 72%, 46%, 1);
+    box-shadow: 1px 1px 12px 0px hsla(256, 72%, 46%, 1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,7 +117,7 @@ h2{
     margin-bottom: 10px;
     width: 100%;
     height: 13%;
-    background-color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%,0.2);
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -182,4 +183,4 @@ h2{
     .c1{
         flex-wrap: wrap;
     } */
-}
+/* } */
