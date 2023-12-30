@@ -12,7 +12,7 @@
     height: 749px;
     
 }
-.d1
+.a1
 {
     height: 60vh;
     width: 600px;
@@ -24,15 +24,33 @@
     box-shadow: 5px 5px 20px hsl(241, 100%, 89%);
 }
 
-.n1
+.b1
 {
     height: 100%;
     width: 50%;
     background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
     border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
-.n2
+.c1
+{
+    text-align: center;
+    border: 2px solid green;
+    height: 80%;
+    width: 80%;
+}
+.b2
 {
     width: 50%;
     background-color: hsl(0, 0%, 100%);
 }
+.d2
+{
+    border: 2px solid red;
+    width :50%;
+    height: 100px;
+}
+d1.a1
