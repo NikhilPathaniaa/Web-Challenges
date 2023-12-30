@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
 *
 {
     margin: 0;
@@ -157,7 +158,28 @@ h2{
     align-items: center;
     justify-content: center;
 }
+.y1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .y2
 {
     width: 40%;
+}
+.heading
+{
+    text-align: start;
+    height: 50px;
+}
+
+/* @media screen and (max-width:600px) {
+    .a1{
+        width: 100%;
+        flex-direction: column;
+    }
+    .c1{
+        flex-wrap: wrap;
+    } */
 }
