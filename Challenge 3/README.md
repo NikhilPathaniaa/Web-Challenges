@@ -31,3 +31,4 @@ We also include variable and static font files for the required fonts for this p
 There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
 
 **Have fun building!** 🚀
+By Nikhil Pathania
