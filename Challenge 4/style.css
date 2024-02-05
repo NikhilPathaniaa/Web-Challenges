@@ -1,0 +1,22 @@
+body
+{
+    background-color: black;
+    height: 97vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+div{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    text-align: center;
+}
+h1
+{
+    color: white;
+}
+p
+{
+    color: goldenrod;
+}
