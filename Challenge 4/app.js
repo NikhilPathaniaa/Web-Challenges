@@ -10,7 +10,7 @@ window.addEventListener('keydown',(e)=>{
 
 window.addEventListener('keyup',(e)=>{
     let a=`${e.key}`
-    document.querySelector(`#${a}`).style.border = "2px solid black";
+        document.querySelector(`#${a}`).style.border = "2px solid black";
     console.log(a);
 }, false);
 
