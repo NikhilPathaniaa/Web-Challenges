@@ -4,14 +4,31 @@
 
 window.addEventListener('keydown',(e)=>{
     let a=`${e.key}`
-    document.querySelector(`#${a}`).style.border = "2px solid red";
-    console.log(a);
+    if(a!=' ')
+    {
+        document.querySelector(`#${a}`).style.border = "2px solid red";
+        console.log(a);
+    }
+    else
+    {
+        document.querySelector('#space').style.border = "2px solid red";
+        console.log(a);
+    }
+    
 }, false);
 
 window.addEventListener('keyup',(e)=>{
     let a=`${e.key}`
+    if(a!=' ')
+    {
         document.querySelector(`#${a}`).style.border = "2px solid black";
-    console.log(a);
+        console.log(a);
+    }
+    else
+    {
+        document.querySelector('#space').style.border = "2px solid black";
+        console.log(a);
+    }
 }, false);
 
 
