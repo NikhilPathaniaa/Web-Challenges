@@ -1,0 +1,32 @@
+body
+{
+    background-color: black;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero
+{
+    background-color: white;
+    border: 2px solid black;
+    height: 60vh;
+    width: 20vw;
+    border-radius: 10px;
+}
+form
+{
+    margin: 10px;
+    margin-left: 20px;
+}
+input
+{
+    border-radius: 25px;
+    height: 30px;
+}
+.btn
+{
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+}
