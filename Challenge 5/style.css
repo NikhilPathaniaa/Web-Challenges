@@ -23,8 +23,10 @@ body
     margin: 10px;
     margin-left: 20px;
 }
-#input
+input
 {
+    border: 1px solid black;
+    outline: none;
     width: 160px;
     border-radius: 25px;
     height: 30px;

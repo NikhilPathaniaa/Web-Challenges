@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section  class="hero">
+    <!-- <section  class="hero">
         <div id="find">
-            <!-- <input type="text" name="data" placeholder="place"> -->
+            <input type="text" name="data" placeholder="place">
             <select name="data" id="input">
                 <option value="India">India</option>
                 <option value="USA">USA</option>
@@ -21,7 +21,7 @@
             <button id="selectBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <img src="./images/clear.png" id="img">
-        <h1>1<sup>o</sup>c</h1>
+        <h1 id="temp">1℃</h1>
         <h2 id="h2">Berlin</h2>
 
         <footer>
@@ -29,8 +29,35 @@
             <h4>2.68 km/h <br>wind Speed</h4>
         </footer>
         
-    </section>
+    </section> -->
 
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="enter city name" spellcheck="false">
+            <button><img src="images/search.png"></button>
+        </div>
+    </div>
+    <div class="weather">
+        <img src="images/rain.png" class="weather-icon" alt="">
+        <h1 class="temp">22℃</h1>
+        <h2 class="city">New York</h2>
+        <div class="details">
+            <div class="col">
+                <img src="images/humidity.png">
+                <div>
+                    <p class="humanity">50%</p>
+                    <p>humidity</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="images/wind.png">
+                <div>
+                    <p class="wind">15 km/h</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
