@@ -11,7 +11,6 @@ async function checkWeather()
     document.querySelector("#h2").innerHTML=data.location.name;
     document.getElementById("temp").innerHTML=data.current.temp_c+ "°C" ; 
 }
-
 checkWeather();
 // let inp = document.querySelector("select")   
 // let btn=document.querySelector("#selectBtn")
