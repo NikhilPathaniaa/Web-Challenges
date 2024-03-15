@@ -1,0 +1,511 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "quiz",
+    "dateExported": "2023-11-30T10:36:10.671Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "e5e7b5fa-0095-493e-9dbe-4e354bb4c6e9",
+            "name": "auth",
+            "containerId": "",
+            "created": "2023-11-21T15:51:34.237Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "49d0d92d-afb6-46f5-9ab2-6c2a39e6614e",
+            "name": "user",
+            "containerId": "",
+            "created": "2023-11-21T23:55:48.885Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "e0131776-ed52-436d-a30d-4b09646aecae",
+            "name": "quiz",
+            "containerId": "",
+            "created": "2023-11-22T05:02:31.554Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "c5763091-e679-40ba-8e28-0b14178fb0b2",
+            "name": "question",
+            "containerId": "",
+            "created": "2023-11-24T01:31:35.836Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "6d79ac8e-70fc-40d9-b41d-c2b93a3cbabd",
+            "name": "choice",
+            "containerId": "",
+            "created": "2023-11-26T08:09:13.643Z",
+            "sortNum": 50000
+        },
+        {
+            "_id": "40e56c9d-dd86-431d-8de6-118ae911e484",
+            "name": "answer",
+            "containerId": "",
+            "created": "2023-11-26T10:07:24.063Z",
+            "sortNum": 60000
+        },
+        {
+            "_id": "2cae068d-8568-41ef-ad00-be67fa25bdea",
+            "name": "result",
+            "containerId": "",
+            "created": "2023-11-27T06:20:25.926Z",
+            "sortNum": 70000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "10b10f5f-1003-4f08-939b-2a4732e7df78",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "e5e7b5fa-0095-493e-9dbe-4e354bb4c6e9",
+            "name": "signup",
+            "url": "http://localhost:3000/api/auth/signup",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-11-21T15:08:58.108Z",
+            "modified": "2023-11-23T17:11:54.758Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"robert\",\n  \"email\": \"robert@gmail.com\",\n  \"password\": \"robert\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8b52f1af-fe31-439e-b430-fd0dad7f12aa",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "e5e7b5fa-0095-493e-9dbe-4e354bb4c6e9",
+            "name": "user signin",
+            "url": "http://localhost:3000/api/auth/signin",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-11-21T15:17:59.139Z",
+            "modified": "2023-11-30T04:48:32.231Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"robert@gmail.com\",\n  \"password\":\"robert\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a4b3e7cf-9e40-45fc-8607-3130887df8e8",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "e5e7b5fa-0095-493e-9dbe-4e354bb4c6e9",
+            "name": "admin signin",
+            "url": "http://localhost:3000/api/auth/signin",
+            "method": "POST",
+            "sortNum": 25000,
+            "created": "2023-11-22T00:02:52.374Z",
+            "modified": "2023-11-22T03:07:31.941Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"wtf@gmail.com\",\n  \"password\":\"neenu\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "345a9584-6c37-4767-a68e-eaeba537dd08",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "e5e7b5fa-0095-493e-9dbe-4e354bb4c6e9",
+            "name": "signout",
+            "url": "http://localhost:3000/api/auth/signout",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-11-21T15:51:55.408Z",
+            "modified": "2023-11-21T15:59:13.427Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "16e6cdeb-3db9-4259-ac87-13c8046a2172",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "49d0d92d-afb6-46f5-9ab2-6c2a39e6614e",
+            "name": "getallusers",
+            "url": "http://localhost:3000/api/user/allusers",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-11-21T23:56:07.626Z",
+            "modified": "2023-11-22T03:08:03.535Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d9dd9d7c-a551-4f82-9204-e0900bd9ce11",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "49d0d92d-afb6-46f5-9ab2-6c2a39e6614e",
+            "name": "getuser",
+            "url": "http://localhost:3000/api/user/4",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-11-22T03:36:12.177Z",
+            "modified": "2023-11-27T03:56:34.212Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5fc103d4-c50e-4c80-8378-a603a051b747",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "49d0d92d-afb6-46f5-9ab2-6c2a39e6614e",
+            "name": "update user",
+            "url": "http://localhost:3000/api/user/4",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2023-11-22T04:02:26.497Z",
+            "modified": "2023-11-30T04:48:48.289Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"mpxfactor\",\n  \"email\":\"mpxfactor@gmail.com\",\n  \"oldpassword\":\"robert\",\n  \"newpassword\":\"qwerty\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a927263f-9391-4672-bf73-c02d4e149e26",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "e0131776-ed52-436d-a30d-4b09646aecae",
+            "name": "get all quizzes",
+            "url": "http://localhost:3000/api/quiz/allquizzes",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-11-22T05:10:48.855Z",
+            "modified": "2023-11-22T05:26:38.216Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "00f65333-e211-4d33-bd31-821ff5c52bab",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "e0131776-ed52-436d-a30d-4b09646aecae",
+            "name": "add quiz",
+            "url": "http://localhost:3000/api/quiz",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2023-11-22T06:32:16.719Z",
+            "modified": "2023-11-26T09:47:44.951Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"Quiz one\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7268e1bc-73b9-47b2-9117-c9b5f8e40c14",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "e0131776-ed52-436d-a30d-4b09646aecae",
+            "name": "get quiz by id",
+            "url": "http://localhost:3000/api/quiz/1",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-11-22T06:47:33.586Z",
+            "modified": "2023-11-26T09:47:50.847Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d77e41c5-0591-4804-b3b4-6d526b7f57db",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "e0131776-ed52-436d-a30d-4b09646aecae",
+            "name": "delete quiz by id",
+            "url": "http://localhost:3000/api/quiz/1",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2023-11-22T07:02:39.025Z",
+            "modified": "2023-11-26T09:42:10.754Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c1ca9e66-ac5d-433e-b3d8-d0256c739bb0",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "e0131776-ed52-436d-a30d-4b09646aecae",
+            "name": "update quiz",
+            "url": "http://localhost:3000/api/quiz/2",
+            "method": "PUT",
+            "sortNum": 130000,
+            "created": "2023-11-24T01:14:40.852Z",
+            "modified": "2023-11-26T09:48:09.908Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"Updated Quiz\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a25b00c2-7a35-41fa-af64-51dd8726b972",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "e0131776-ed52-436d-a30d-4b09646aecae",
+            "name": "get all quizzes by user id",
+            "url": "http://localhost:3000/api/quiz/user",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2023-11-27T03:22:51.942Z",
+            "modified": "2023-11-27T03:25:37.151Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "aa725a8f-1a24-482c-83e0-14e9377e33ca",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "c5763091-e679-40ba-8e28-0b14178fb0b2",
+            "name": "get question by quiz id",
+            "url": "http://localhost:3000/api/question/1/1",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2023-11-24T17:06:16.152Z",
+            "modified": "2023-11-26T06:22:00.860Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0266c039-d1b1-4498-b6c0-a56cc4167f1c",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "c5763091-e679-40ba-8e28-0b14178fb0b2",
+            "name": "add question by quiz id",
+            "url": "http://localhost:3000/api/question/1",
+            "method": "POST",
+            "sortNum": 170000,
+            "created": "2023-11-26T06:21:34.034Z",
+            "modified": "2023-11-26T06:33:09.622Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"question\": \"Question added from front end.\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b56dd6aa-7c66-4bdc-81d5-ad187031a8c2",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "c5763091-e679-40ba-8e28-0b14178fb0b2",
+            "name": "update question by id",
+            "url": "http://localhost:3000/api/question/1/5",
+            "method": "PUT",
+            "sortNum": 180000,
+            "created": "2023-11-26T06:31:50.458Z",
+            "modified": "2023-11-26T06:42:16.473Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"question\":\"Updated Question?\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f039aa93-5dd6-4539-922d-22d502123258",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "c5763091-e679-40ba-8e28-0b14178fb0b2",
+            "name": "delete question by id",
+            "url": "http://localhost:3000/api/question/1/5",
+            "method": "DELETE",
+            "sortNum": 190000,
+            "created": "2023-11-26T06:38:07.708Z",
+            "modified": "2023-11-26T06:42:24.180Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "314fd234-aac1-4ee0-88f7-2da74662f936",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "c5763091-e679-40ba-8e28-0b14178fb0b2",
+            "name": "add questions along with choices",
+            "url": "http://localhost:3000/api/question/questionwithchoices/1",
+            "method": "POST",
+            "sortNum": 200000,
+            "created": "2023-11-26T07:02:20.856Z",
+            "modified": "2023-11-26T07:07:05.266Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"question\": \"What do you want in life?\",\n  \"choices\": [\n    {\n      \"choice\": \"money\",\n      \"is_correct\": false\n    },\n    {\n      \"choice\": \"women\",\n      \"is_correct\": false\n    },\n    {\n      \"choice\": \"nothing\",\n      \"is_correct\": false\n    },\n    {\n      \"choice\": \"no fucking idea\",\n      \"is_correct\": true\n    }\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "48a64533-ffd2-4811-b34a-b16aaca9d63d",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "6d79ac8e-70fc-40d9-b41d-c2b93a3cbabd",
+            "name": "get choice by id",
+            "url": "http://localhost:3000/api/choice/1/1/1",
+            "method": "GET",
+            "sortNum": 210000,
+            "created": "2023-11-26T08:09:23.846Z",
+            "modified": "2023-11-26T08:52:30.190Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4962680c-ecea-4633-97e1-ff391fb1170a",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "c5763091-e679-40ba-8e28-0b14178fb0b2",
+            "name": "get all questions and choices by quiz id",
+            "url": "http://localhost:3000/api/question/allquestions/1",
+            "method": "GET",
+            "sortNum": 210000,
+            "created": "2023-11-26T09:24:40.732Z",
+            "modified": "2023-11-26T11:00:26.646Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6ac11032-b072-4b88-98c9-2a2c69b91273",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "6d79ac8e-70fc-40d9-b41d-c2b93a3cbabd",
+            "name": "add choice",
+            "url": "http://localhost:3000/api/choice/1/1",
+            "method": "POST",
+            "sortNum": 220000,
+            "created": "2023-11-26T08:50:55.523Z",
+            "modified": "2023-11-27T03:51:25.787Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"choice\":\"frontend\",\n  \"is_correct\":3\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1d552900-1ab7-4b36-83ae-9d96d6198ed1",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "6d79ac8e-70fc-40d9-b41d-c2b93a3cbabd",
+            "name": "update choice",
+            "url": "http://localhost:3000/api/choice/1/1/1",
+            "method": "PUT",
+            "sortNum": 230000,
+            "created": "2023-11-26T08:56:24.993Z",
+            "modified": "2023-11-27T03:54:07.752Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"choice\":\"frontend updated choice\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "37dfd511-fb07-4b4f-9356-1ffae8d45dab",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "6d79ac8e-70fc-40d9-b41d-c2b93a3cbabd",
+            "name": "delete choice ",
+            "url": "http://localhost:3000/api/choice/1/1/17",
+            "method": "DELETE",
+            "sortNum": 240000,
+            "created": "2023-11-26T08:58:54.999Z",
+            "modified": "2023-11-26T08:59:28.622Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "974f71d9-20ca-41b0-acf8-5cf0aed192ac",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "6d79ac8e-70fc-40d9-b41d-c2b93a3cbabd",
+            "name": "get all answers by quiz id",
+            "url": "http://localhost:3000/api/choice/1",
+            "method": "GET",
+            "sortNum": 250000,
+            "created": "2023-11-26T10:24:51.213Z",
+            "modified": "2023-11-26T13:02:13.642Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c7e53748-a48a-47c6-8006-7765dfc101d0",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "40e56c9d-dd86-431d-8de6-118ae911e484",
+            "name": "save answer",
+            "url": "http://localhost:3000/api/answer",
+            "method": "POST",
+            "sortNum": 260000,
+            "created": "2023-11-26T10:07:34.840Z",
+            "modified": "2023-11-27T03:32:11.661Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "[\n  {\n    \"questionId\": 1,\n    \"userChoice\": 1,\n    \"quizId\": 2\n  },\n  {\n    \"questionId\": 2,\n    \"userChoice\": 2,\n    \"quizId\": 2\n  },\n  {\n    \"questionId\": 3,\n    \"userChoice\": 3,\n    \"quizId\": 2\n  },\n  {\n    \"questionId\": 4,\n    \"userChoice\": 4,\n    \"quizId\": 2\n  }\n]",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "455e6ff4-ac10-4196-a586-626b577ee273",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "2cae068d-8568-41ef-ad00-be67fa25bdea",
+            "name": "add result",
+            "url": "http://localhost:3000/api/result/1",
+            "method": "POST",
+            "sortNum": 280000,
+            "created": "2023-11-27T06:27:56.258Z",
+            "modified": "2023-11-30T08:47:23.280Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "34880229-509e-4ece-b107-51660225f7e8",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "2cae068d-8568-41ef-ad00-be67fa25bdea",
+            "name": "get all results by user id",
+            "url": "http://localhost:3000/api/result/getallresults/4",
+            "method": "GET",
+            "sortNum": 300000,
+            "created": "2023-11-30T05:55:37.596Z",
+            "modified": "2023-11-30T09:29:03.101Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d185ed95-3bd0-48bc-acf0-55c4118273e1",
+            "colId": "ed1d9c91-c170-4940-95c9-a268bdc97091",
+            "containerId": "2cae068d-8568-41ef-ad00-be67fa25bdea",
+            "name": "get all results as admin",
+            "url": "http://localhost:3000/api/result/getallresults",
+            "method": "GET",
+            "sortNum": 320000,
+            "created": "2023-11-30T10:27:20.366Z",
+            "modified": "2023-11-30T10:28:01.954Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

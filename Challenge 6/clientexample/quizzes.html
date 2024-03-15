@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        height: 100vh;
+        background-color: black;
+        color: white;
+      }
+      button,
+      input {
+        display: block;
+      }
+      input,
+      button {
+        background-color: inherit;
+        color: inherit;
+        padding-inline: 1rem;
+        padding-block: 1rem;
+        font-size: 2rem;
+      }
+      button {
+        cursor: pointer;
+        border: none;
+        background-color: rgb(250, 97, 133);
+        margin-top: 1rem;
+        width: 100%;
+      }
+
+      button:hover{
+        background-color: rgb(246, 45, 79);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- sign up -->
+    <form>
+      <button type="submit" id="button">get quizzes</button>
+      <button type="submit" id="deleteButton">delete quiz</button>
+      <button type="submit" id="updateButton">update quiz</button>
+    </form>
+    <script>
+      let button = document.getElementById("button");
+      let deleteButton = document.getElementById("deleteButton");
+      let updateButton = document.getElementById("updateButton");
+
+      let url = "http://localhost:3000/api/quiz/allquizzes";
+      let deleteUrl = "http://localhost:3000/api/quiz/1";
+      let updateUrl = "http://localhost:3000/api/quiz/2";
+
+      button.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        fetch(url, {
+          method: "GET",
+          cache: "default",
+          credentials: "include",
+        })
+          .then((response) => {
+            return response.json();
+          })
+          .then((resData) => {
+            console.log(resData);
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      });
+
+      deleteButton.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        fetch(deleteUrl, {
+          method: "DELETE",
+          credentials: "include",
+        })
+          .then((response) => {
+            return response.json();
+          })
+          .then((resData) => {
+            console.log(resData);
+          })
+          .catch((err) => {
+            console.log(err.message);
+          });
+      });
+
+      updateButton.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        fetch(updateUrl, {
+          method: "PUT",
+          credentials: "include",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            title: "Updated Quiz",
+          }),
+        })
+          .then((response) => {
+            return response.json();
+          })
+          .then((resData) => {
+            console.log(resData);
+          })
+          .catch((err) => {
+            console.log(err.message);
+          });
+      });
+    </script>
+  </body>
+</html>
