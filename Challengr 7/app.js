@@ -9,8 +9,8 @@ async function romun(x)
 {
     console.log(x);
     
-    const response = await fetch('./num.json')
-    const name = await response.json();
+    const response = await fetch('./youtube-api.json')
+    const data = await response.json();
 
-    alert(name[x]) 
+    document.write(data["icons"]) 
 }
