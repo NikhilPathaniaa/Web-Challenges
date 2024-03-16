@@ -9,8 +9,8 @@ async function romun(x)
 {
     console.log(x);
     
-    const response = await fetch('num.json')
+    const response = await fetch('./num.json')
     const name = await response.json();
 
-    if(name == x) {console.log(`<h1>${name} is ${x}</h1>`);     }  
+    alert(name[x]) 
 }
