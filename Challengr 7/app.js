@@ -13,6 +13,10 @@ async function products()
                         <div class="product-card_img">
 							<img src="${images[0].url}" alt="${name}" />
 						</div>
+                        <div class="product-card_description">
+						    <div class="product-card_text">${name}</div>
+						    <div class="product-card_price">${price}</div>
+					    </div>
         </div>`
         console.log(i);
     })
