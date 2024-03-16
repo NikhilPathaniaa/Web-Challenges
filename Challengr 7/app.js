@@ -4,11 +4,11 @@ products();
 async function products()
 {
     const response = await fetch('./products.json')
-    const data = await response.json();
+    const products = await response.json();
 
-    data.map((i)=>
+    products.forEach((product)=>
     {
-        const { id, name, price, images } = i;
+        const { id, name, price, images } = product;
         PopPorducts.innerHTML +=`<div class="product-card" data-product-id="${id}">
                         <div class="product-card_img">
 							<img src="${images[0].url}" alt="${name}" />
@@ -18,7 +18,7 @@ async function products()
 						    <div class="product-card_price">${price}</div>
 					    </div>
         </div>`
-        console.log(i);
+        console.log(product);
     })
     
 }
