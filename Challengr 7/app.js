@@ -1,3 +1,4 @@
+const PopPorducts = document.querySelector(".parent-card");
 
 products();
 async function products()
@@ -5,12 +6,15 @@ async function products()
     const response = await fetch('./products.json')
     const data = await response.json();
 
-    const value = data.map((i)=>
+    data.map((i)=>
     {
-        let value1=[];
-        value1=data[0+i-1]
-        return value1;
+        const { id, name, price, images } = i;
+        PopPorducts.innerHTML +=`<div class="product-card" data-product-id="${id}">
+                        <div class="product-card_img">
+							<img src="${images[0].url}" alt="${name}" />
+						</div>
+        </div>`
+        console.log(i);
     })
-    console.log(value);
     
 }
