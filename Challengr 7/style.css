@@ -167,22 +167,3 @@ section {
 	width: 15px;
 	height: 15px;
 }
-
-[data-tooltip]::before {
-	content: attr(data-tooltip);
-	position: absolute;
-	background-color: var(--black);
-	padding: 5px 10px;
-	right: calc(100% + 5px);
-	border-radius: var(--border-5);
-	white-space: nowrap;
-	font-size: 0.8rem;
-	color: var(--white);
-	opacity: 0;
-	pointer-events: none;
-	transition: opacity 0.3s ease;
-}
-
-[data-tooltip]:hover::before {
-	opacity: 1;
-}
