@@ -30,6 +30,6 @@ This is a simple random jokes app that displays a random joke everytime user cli
 # ©️ Copyright : 
 
 <div class="copyright">
-    <p>2022 <span>©</span> Copyright <span></span> And Design By <a href="https://github.com/NikhilPathaniaa">Nikhil Pathania😃</a>
+    <p>2024 <span>©</span> Copyright <span></span> And Design By <a href="https://github.com/NikhilPathaniaa">Nikhil Pathania😃</a>
     </p>
 </div>
