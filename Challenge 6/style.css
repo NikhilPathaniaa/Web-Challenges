@@ -12,6 +12,9 @@ body
 }
 #hero
 {
+    position: relative;
+    align-content: center;
+    text-align: center;
     height: 50vh;
     width: 25vw;
     border: 2px solid black;
@@ -20,12 +23,36 @@ body
 }
 .btn
 {
+    position: absolute;
+    left: 90px;
+    bottom: 30px;
+    /* border: 2px solid red; */
     background-color: goldenrod;
     height: 50px;
     width: 200px;
     border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.btn:hover
+{
+    cursor: pointer;
 }
 #jokes
 {
+    margin: 2px;
+    /* border: 2px solid red; */
     color: #fff;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#emoji
+{
+    position: absolute;
+    top: -3px;
+    left: 135px;
+    height: 80px;
+    width: 80px;
+    /* border: 2px solid red; */
+    font-size: 80px;
 }
