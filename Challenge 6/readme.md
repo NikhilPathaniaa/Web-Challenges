@@ -6,7 +6,7 @@ This is a simple random jokes app that displays a random joke everytime user cli
 
 </br>
 
-### What is the purpose of this project?
+### 🥳 What is the purpose of this project?
 
 Welcome to today’s Challenge. Today we are going to create a random joke generator. For this, we are going to use HTML, CSS and Javascript. We use a Joke Json in this Challenge.
 
