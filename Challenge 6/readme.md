@@ -7,7 +7,7 @@ This is a simple random jokes app that displays a random joke everytime user cli
 </br>
 ---
 
-Welcome to today’s tutorial. Today we are going to create a random joke generator. For this, we are going to use HTML, CSS and Javascript. We use a Joke Json in this tutorial.
+Welcome to today’s Challenge. Today we are going to create a random joke generator. For this, we are going to use HTML, CSS and Javascript. We use a Joke Json in this Challenge.
 
 The joke generator project is build to increase the knowledge of the json and fetch the data from the json file.
 
