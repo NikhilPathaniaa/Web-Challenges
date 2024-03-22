@@ -14,7 +14,7 @@ async function randomJokes()
     let x = Math.floor((Math.random()) * jokes.length )
     console.log( emojis[e])
 
-    const {type,setup,punchline} = jokes[x];
+    const {setup,punchline} = jokes[x];
     
     emoji.innerHTML = `<div>${emojis[e]}</div>`
     space.innerHTML = `<p id="setup">${setup}</p>
